@@ -1,0 +1,8 @@
+{
+  "name": "Remix AeroGlobe 3D - Global Travel \u0026 Flight Navigation",
+  "description": "Interactive 3D navigation and travel atlas focused exclusively on India, featuring India\u0027s sovereign map, domestic flight radar tracking, authentic Indian destinations, dynamic weather systems, and collaborative itineraries.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

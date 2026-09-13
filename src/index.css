@@ -1,0 +1,145 @@
+@import "tailwindcss";
+
+@keyframes astronautFloat {
+  0% {
+    transform: translate3d(0, 0, 0) rotate(0deg);
+  }
+  25% {
+    transform: translate3d(-6px, -18px, 0) rotate(-2deg);
+  }
+  50% {
+    transform: translate3d(4px, -28px, 0) rotate(1.5deg);
+  }
+  75% {
+    transform: translate3d(8px, -10px, 0) rotate(2.5deg);
+  }
+  100% {
+    transform: translate3d(0, 0, 0) rotate(0deg);
+  }
+}
+
+@keyframes cloudDrift1 {
+  0% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  50% {
+    transform: translate3d(35px, -15px, 0) scale(1.04);
+  }
+  100% {
+    transform: translate3d(-25px, 10px, 0) scale(0.98);
+  }
+}
+
+@keyframes cloudDrift2 {
+  0% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  50% {
+    transform: translate3d(-40px, 12px, 0) scale(1.05);
+  }
+  100% {
+    transform: translate3d(20px, -18px, 0) scale(0.97);
+  }
+}
+
+@keyframes cloudDrift3 {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    transform: translate3d(30px, -8px, 0);
+  }
+  100% {
+    transform: translate3d(-30px, 8px, 0);
+  }
+}
+
+@keyframes cloudDrift4 {
+  0% {
+    transform: translate3d(0, 0, 0) scale(0.98);
+  }
+  50% {
+    transform: translate3d(-25px, 20px, 0) scale(1.03);
+  }
+  100% {
+    transform: translate3d(25px, -12px, 0) scale(0.99);
+  }
+}
+
+@keyframes chromeShimmer {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+@keyframes shootingStar1 {
+  0% {
+    transform: translate3d(0, 0, 0) scale(0.5);
+    opacity: 0;
+  }
+  5% {
+    opacity: 0.9;
+  }
+  15% {
+    transform: translate3d(300px, 180px, 0) scale(1.2);
+    opacity: 0;
+  }
+  100% {
+    transform: translate3d(300px, 180px, 0) scale(1.2);
+    opacity: 0;
+  }
+}
+
+@keyframes shootingStar2 {
+  0%, 45% {
+    transform: translate3d(0, 0, 0) scale(0.4);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.85;
+  }
+  60% {
+    transform: translate3d(-350px, 220px, 0) scale(1.1);
+    opacity: 0;
+  }
+  100% {
+    transform: translate3d(-350px, 220px, 0) scale(1.1);
+    opacity: 0;
+  }
+}
+
+.animate-astronaut-float {
+  animation: astronautFloat 9s ease-in-out infinite;
+}
+
+.animate-cloud-drift-1 {
+  animation: cloudDrift1 26s ease-in-out infinite alternate;
+}
+
+.animate-cloud-drift-2 {
+  animation: cloudDrift2 22s ease-in-out infinite alternate;
+}
+
+.animate-cloud-drift-3 {
+  animation: cloudDrift3 30s ease-in-out infinite alternate;
+}
+
+.animate-cloud-drift-4 {
+  animation: cloudDrift4 20s ease-in-out infinite alternate;
+}
+
+.animate-chrome-shimmer {
+  animation: chromeShimmer 5s ease-in-out infinite;
+}
+
+.shooting-star-1 {
+  animation: shootingStar1 11s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+.shooting-star-2 {
+  animation: shootingStar2 14s cubic-bezier(0.4, 0, 0.2, 1) infinite 5s;
+}
+
